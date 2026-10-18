@@ -1,5 +1,7 @@
 #if canImport(Darwin)
 import Darwin
+#elseif os(Windows)
+import ucrt
 #elseif canImport(Glibc)
 import Glibc
 #elseif canImport(Musl)
